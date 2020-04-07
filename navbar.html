@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<style type="text/css">
+	body{
+		margin: 0;
+	}
+		.nav{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			
+		}
+		i{
+			margin-right: 10px;
+		}
+		a{	
+			margin: 20px;
+			text-decoration: none;
+			font-size: 40px;
+			border-bottom: 1px solid skyblue;
+			 transition: color 0.25s 0.1s ease-in-out;
+		}
+	    a:hover{
+	    	color:skyblue;
+	    	
+	    }
+		@media screen and (max-width: 1050px){
+             .nav{
+             	justify-content: space-around;
+             }
+             a{
+             	font-size: 26px;
+             }
+		}
+		@media screen and (max-width: 600px){
+			.nav{
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+<a href=""><i class="fa fa-home"></i>Home</a>
+<a href=""><i class="fa fa-question"></i>About</a>
+<a href=""><i class="fa fa-phone"></i>Contact</a>
+<a href=""><i class="fa fa-paw"></i>Dogs</a>
+</div>
+</body>
+</html>
